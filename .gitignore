@@ -1,7 +1,14 @@
+
 /*
+
 git add -f _config.yml
+
 git add -f package-lock.json
+
 git add -f package.json
+
 git add -f scaffolds/*
+
 git add -f source/*
+
 git add -f themes/*
