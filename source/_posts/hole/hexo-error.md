@@ -11,3 +11,13 @@ Hexo: TypeError: Cannot set property 'lastIndex' of undefined
 ```
 
 解决方法：打开主工程的配置文件_config.yml(非主题里面的配置文件)，找到`auto_detect`，设置为false即可 
+
+
+
+ERROR Deployer not found: git
+
+```
+npm install hexo-deployer-git --save
+```
+
+npm i hexo-generator-json-content --save
