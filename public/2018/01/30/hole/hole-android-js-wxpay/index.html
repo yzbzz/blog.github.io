@@ -8,22 +8,18 @@
   <link rel="dns-prefetch" href="yzbzz.github.io">
   <title>记一次Android端H5调用微信支付引发的坑 | Yzbzz&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了
-事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。
-因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
+  <meta name="description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了 事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。 因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
+<meta name="keywords" content="hole">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次Android端H5调用微信支付引发的坑">
 <meta property="og:url" content="yzbzz.github.io/2018/01/30/hole/hole-android-js-wxpay/index.html">
-<meta property="og:site_name" content="Yzbzz's Blog">
-<meta property="og:description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了
-事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。
-因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
-<meta property="og:updated_time" content="2018-01-30T07:42:45.092Z">
+<meta property="og:site_name" content="Yzbzz&#39;s Blog">
+<meta property="og:description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了 事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。 因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-31T09:35:37.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记一次Android端H5调用微信支付引发的坑">
-<meta name="twitter:description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了
-事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。
-因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
+<meta name="twitter:description" content="事件背景今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把webview给关掉了 事件原因分析经过我一顿猛操作，最后发现原来是webview设置userAgent引发的问题。 因为H5的要求，我们会在userAgent里设置一些信息，这里以abc为例，我们把abc这个字符串设置到了userAgent里，同时在Andr">
   
     <link rel="alternative" href="/atom.xml" title="Yzbzz&#39;s Blog" type="application/atom+xml">
   
@@ -52,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/avatar.png" class="js-avatar">
+			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Yzbzz</a></h1>
@@ -62,23 +58,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/tags/android">Android</a></li>
+				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/ios">IOS</a></li>
-	        
-				<li><a href="/tags/java">Java</a></li>
-	        
-				<li><a href="/tags/fe">FE前端</a></li>
-	        
-				<li><a href="/tags/apple">MAC OS</a></li>
-	        
-				<li><a href="/tags/read">读书笔记</a></li>
-	        
-				<li><a href="/tags/blog">博客地址</a></li>
-	        
-				<li><a href="/tags/study">安装配置</a></li>
-	        
-				<li><a href="/tags/hole">踩过的坑</a></li>
+				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -100,13 +82,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -124,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/avatar.png" class="js-avatar">
+				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Yzbzz</h1>
@@ -136,57 +118,29 @@
 			
 				
 			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 11.11111111111111%"><a href="/tags/android">Android</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 11.11111111111111%"><a href="/tags/ios">IOS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/java">Java</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/fe">FE前端</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/apple">MAC OS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/read">读书笔记</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/blog">博客地址</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/study">安装配置</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/hole">踩过的坑</a></li>
+					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -224,10 +178,10 @@
         <h3 id="事件背景"><a href="#事件背景" class="headerlink" title="事件背景"></a>事件背景</h3><p>今天一位H5的同事过来找我们，说他们在H5里调用微信支付(不是通过jsapi调用)，到支付界面，点击返回键，会导致APP重新启动，把<code>webview</code>给关掉了</p>
 <h3 id="事件原因分析"><a href="#事件原因分析" class="headerlink" title="事件原因分析"></a>事件原因分析</h3><p>经过我一顿猛操作，最后发现原来是<code>webview</code>设置<code>userAgent</code>引发的问题。</p>
 <p>因为H5的要求，我们会在<code>userAgent</code>里设置一些信息，这里以<code>abc</code>为例，我们把<code>abc</code>这个字符串设置到了<code>userAgent</code>里，同时在<code>AndroidManifest</code>的<code>activity</code>节点注册了<code>abc</code>的<code>scheme</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 设置userAgent</span></div><div class="line">webSettings.setUserAgentString(ua + <span class="string">" abc/"</span> + getVersionName());</div></pre></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 设置scheme</div><div class="line">&lt;intent-filter&gt;</div><div class="line">  &lt;data android:scheme="abc" /&gt;</div><div class="line">  &lt;action android:name="android.intent.action.VIEW" /&gt;</div><div class="line">  &lt;category android:name="android.intent.category.DEFAULT" /&gt;</div><div class="line">  &lt;category android:name="android.intent.category.BROWSABLE" /&gt;</div><div class="line">&lt;/intent-filter&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置userAgent</span></span><br><span class="line">webSettings.setUserAgentString(ua + <span class="string">" abc/"</span> + getVersionName());</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置scheme</span></span><br><span class="line">&lt;intent-filter&gt;</span><br><span class="line">  &lt;data android:scheme=<span class="string">"abc"</span> /&gt;</span><br><span class="line">  &lt;action android:name=<span class="string">"android.intent.action.VIEW"</span> /&gt;</span><br><span class="line">  &lt;category android:name=<span class="string">"android.intent.category.DEFAULT"</span> /&gt;</span><br><span class="line">  &lt;category android:name=<span class="string">"android.intent.category.BROWSABLE"</span> /&gt;</span><br><span class="line">&lt;/intent-filter&gt;</span><br></pre></td></tr></table></figure>
 <p>这里设置之后，当点击微信支付的返回按钮后，发现微信会发起一个类似下面结构的<code>Intent</code>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url: abc://</div><div class="line">action: android.intent.action.VIEW</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: abc://</span><br><span class="line">action: android.intent.action.VIEW</span><br></pre></td></tr></table></figure>
 <p>这里导致我们注册的<code>scheme</code>的<code>Activiy</code>会接收到，导致应用重启。</p>
 <h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>通过我们的观察，发现<code>scheme</code>是区别大小写的，我们最后把<code>userAgent</code>的<code>abc</code>改成大写<code>ABC</code>就OK了</p>
 
@@ -246,16 +200,6 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/AliPay.jpeg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/Wechat.jpeg">
-                      <span class="reward-type">微信</span>
-                    </div>
                     
                   </div>
                 </span>
@@ -343,6 +287,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/01/31/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
     <a href="/2018/01/30/study/study-centenos-ssh/" id="article-nav-older" class="article-nav-link-wrap">
@@ -484,6 +437,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">fe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hole</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
@@ -493,14 +454,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">stanford</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hole</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">fe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -576,7 +529,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://github.com/yzbzz" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>github</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
@@ -607,7 +560,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">目标设到月球，即使失败，也能落到众星之间。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     

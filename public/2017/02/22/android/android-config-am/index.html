@@ -8,31 +8,18 @@
   <link rel="dns-prefetch" href="yzbzz.github.io">
   <title>Android配置文件详解-AndroidManifest | Yzbzz&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="AndroidManifest
-每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作
-
-
-为应用的Java软件包命名。软件包名称充当应用的唯一标识符。
-描述应用的各个组件，包括构成应用的">
+  <meta name="description" content="AndroidManifest 每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作   为应用的Java软件包命名。软件包名称充当应用的唯一标识符。 描述应用的各个组件，包括构成应用的">
+<meta name="keywords" content="android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android配置文件详解-AndroidManifest">
 <meta property="og:url" content="yzbzz.github.io/2017/02/22/android/android-config-am/index.html">
-<meta property="og:site_name" content="Yzbzz's Blog">
-<meta property="og:description" content="AndroidManifest
-每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作
-
-
-为应用的Java软件包命名。软件包名称充当应用的唯一标识符。
-描述应用的各个组件，包括构成应用的">
-<meta property="og:updated_time" content="2017-02-23T03:33:18.000Z">
+<meta property="og:site_name" content="Yzbzz&#39;s Blog">
+<meta property="og:description" content="AndroidManifest 每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作   为应用的Java软件包命名。软件包名称充当应用的唯一标识符。 描述应用的各个组件，包括构成应用的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-31T09:35:37.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android配置文件详解-AndroidManifest">
-<meta name="twitter:description" content="AndroidManifest
-每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作
-
-
-为应用的Java软件包命名。软件包名称充当应用的唯一标识符。
-描述应用的各个组件，包括构成应用的">
+<meta name="twitter:description" content="AndroidManifest 每个应用的根目录中都必须包含一个AndroidManifest.xml文件(且文件名精确无误)。AndroidManifest向Android系统提供应用的必要信息，系统必须具备有这些信息方可运行应用的任何代码。此外，AndroidManifest还可执行以下操作   为应用的Java软件包命名。软件包名称充当应用的唯一标识符。 描述应用的各个组件，包括构成应用的">
   
     <link rel="alternative" href="/atom.xml" title="Yzbzz&#39;s Blog" type="application/atom+xml">
   
@@ -61,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/avatar.png" class="js-avatar">
+			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Yzbzz</a></h1>
@@ -71,23 +58,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/tags/android">Android</a></li>
+				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/ios">IOS</a></li>
-	        
-				<li><a href="/tags/java">Java</a></li>
-	        
-				<li><a href="/tags/fe">FE前端</a></li>
-	        
-				<li><a href="/tags/apple">MAC OS</a></li>
-	        
-				<li><a href="/tags/read">读书笔记</a></li>
-	        
-				<li><a href="/tags/blog">博客地址</a></li>
-	        
-				<li><a href="/tags/study">安装配置</a></li>
-	        
-				<li><a href="/tags/hole">踩过的坑</a></li>
+				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -109,13 +82,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -133,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/avatar.png" class="js-avatar">
+				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Yzbzz</h1>
@@ -145,57 +118,29 @@
 			
 				
 			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 11.11111111111111%"><a href="/tags/android">Android</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 11.11111111111111%"><a href="/tags/ios">IOS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/java">Java</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/fe">FE前端</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/apple">MAC OS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/read">读书笔记</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/blog">博客地址</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/study">安装配置</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/hole">踩过的坑</a></li>
+					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -235,19 +180,19 @@
 </blockquote>
 <ul>
 <li>为应用的Java软件包命名。软件包名称充当应用的唯一标识符。</li>
-<li>描述应用的各个组件，包括构成应用的 Activity、服务、广播接收器和内容提供程序。它还为实现每个组件的类命名并发布其功能，例如它们可以处理的 <a href="https://developer.android.com/reference/android/content/Intent.html" target="_blank" rel="external">Intent</a> 消息。这些声明向 Android 系统告知有关组件以及可以启动这些组件的条件的信息。</li>
+<li>描述应用的各个组件，包括构成应用的 Activity、服务、广播接收器和内容提供程序。它还为实现每个组件的类命名并发布其功能，例如它们可以处理的 <a href="https://developer.android.com/reference/android/content/Intent.html" target="_blank" rel="noopener">Intent</a> 消息。这些声明向 Android 系统告知有关组件以及可以启动这些组件的条件的信息。</li>
 <li>确定托管应用组件的进程。</li>
 <li>声明应用必须具备哪些权限才能访问 API 中受保护的部分并与其他应用交互。还声明其他应用与该应用组件交互所需具备的权限。</li>
-<li>列出 <a href="https://developer.android.com/reference/android/app/Instrumentation.html" target="_blank" rel="external">Instrumentation</a> 类，这些类可在应用运行时提供分析和其他信息。这些声明只会在应用处于开发阶段时出现在清单中，在应用发布之前将移除。</li>
+<li>列出 <a href="https://developer.android.com/reference/android/app/Instrumentation.html" target="_blank" rel="noopener">Instrumentation</a> 类，这些类可在应用运行时提供分析和其他信息。这些声明只会在应用处于开发阶段时出现在清单中，在应用发布之前将移除。</li>
 <li>声明应用所需的最低 Android API 级别</li>
 <li>列出应用必须链接到的库</li>
 </ul>
-<p>注：准备要在 Chromebook 上运行的 Android 应用时，要考虑一些重要的硬件和软件功能限制。如需了解详细信息，请参阅 <a href="https://developer.android.com/topic/arc/manifest.html" target="_blank" rel="external">Chromebook 的应用清单兼容性</a>文档。</p>
+<p>注：准备要在 Chromebook 上运行的 Android 应用时，要考虑一些重要的硬件和软件功能限制。如需了解详细信息，请参阅 <a href="https://developer.android.com/topic/arc/manifest.html" target="_blank" rel="noopener">Chromebook 的应用清单兼容性</a>文档。</p>
 <a id="more"></a>
 <h2 id="AndroidManifest文件结构"><a href="#AndroidManifest文件结构" class="headerlink" title="AndroidManifest文件结构"></a>AndroidManifest文件结构</h2><p>下面是AndroidManifest文件的示例：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line"></div><div class="line">&lt;manifest&gt;</div><div class="line"></div><div class="line">    &lt;uses-permission /&gt;</div><div class="line">    &lt;permission /&gt;</div><div class="line">    &lt;permission-tree /&gt;</div><div class="line">    &lt;permission-group /&gt;</div><div class="line">    &lt;instrumentation /&gt;</div><div class="line">    &lt;uses-sdk /&gt;</div><div class="line">    &lt;uses-configuration /&gt;  </div><div class="line">    &lt;uses-feature /&gt;  </div><div class="line">    &lt;supports-screens /&gt;  </div><div class="line">    &lt;compatible-screens /&gt;  </div><div class="line">    &lt;supports-gl-texture /&gt;  </div><div class="line"></div><div class="line">    &lt;application&gt;</div><div class="line">  		&lt;meta-data /&gt;</div><div class="line">        &lt;activity&gt;</div><div class="line">            &lt;intent-filter&gt;</div><div class="line">                &lt;action /&gt;</div><div class="line">                &lt;category /&gt;</div><div class="line">                &lt;data /&gt;</div><div class="line">            &lt;/intent-filter&gt;</div><div class="line">            &lt;meta-data /&gt;</div><div class="line">        &lt;/activity&gt;</div><div class="line"></div><div class="line">        &lt;activity-alias&gt;</div><div class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</div><div class="line">            &lt;meta-data /&gt;</div><div class="line">        &lt;/activity-alias&gt;</div><div class="line"></div><div class="line">        &lt;service&gt;</div><div class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</div><div class="line">            &lt;meta-data/&gt;</div><div class="line">        &lt;/service&gt;</div><div class="line"></div><div class="line">        &lt;receiver&gt;</div><div class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</div><div class="line">            &lt;meta-data /&gt;</div><div class="line">        &lt;/receiver&gt;</div><div class="line"></div><div class="line">        &lt;provider&gt;</div><div class="line">            &lt;grant-uri-permission /&gt;</div><div class="line">            &lt;meta-data /&gt;</div><div class="line">            &lt;path-permission /&gt;</div><div class="line">        &lt;/provider&gt;</div><div class="line"></div><div class="line">        &lt;uses-library /&gt;</div><div class="line"></div><div class="line">    &lt;/application&gt;</div><div class="line"></div><div class="line">&lt;/manifest&gt;</div></pre></td></tr></table></figure>
-<h3 id="AndroidManifest属性"><a href="#AndroidManifest属性" class="headerlink" title="AndroidManifest属性"></a>AndroidManifest属性</h3><h5 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h5><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&lt;application  </div><div class="line">  	android:allowBackup=["true" | "false"]</div><div class="line">	android:allowClearUserData=["true" | "false"]</div><div class="line">    android:allowTaskReparenting=["true" | "false"]</div><div class="line">    android:backupAgent="string"</div><div class="line">    android:backupInForeground=["true" | "false"]</div><div class="line">    android:banner="drawable resource" </div><div class="line">    android:debuggable=["true" | "false"]</div><div class="line">    android:description="string resource"</div><div class="line">    android:enabled=["true" | "false"]</div><div class="line">    android:extractNativeLibs=["true" | "false"]</div><div class="line">    android:fullBackupContent="string"</div><div class="line">    android:fullBackupOnly=["true" | "false"]</div><div class="line">    android:hasCode=["true" | "false"]</div><div class="line">    android:hardwareAccelerated=["true" | "false"]</div><div class="line">    android:isGame=["true" | "false"]</div><div class="line">    android:icon="drawable resource"</div><div class="line">    android:killAfterRestore=["true" | "false"]</div><div class="line">    android:label="string resource"</div><div class="line">    android:largeHeap=["true" | "false"]</div><div class="line">    android:logo="drawable resource"</div><div class="line">    android:manageSpaceActivity="string"</div><div class="line">    android:name="string"</div><div class="line">    android:permission="string"</div><div class="line">    android:persistent=["true" | "false"]</div><div class="line">    android:process="string"</div><div class="line">    android:restoreAnyVersion=["true" | "false"]</div><div class="line">    android:requiredAccountType="string"</div><div class="line">    android:resizeableActivity=["true" | "false"]</div><div class="line">    android:restrictedAccountType="string"</div><div class="line">    android:supportsRtl=["true" | "false"]</div><div class="line">    android:taskAffinity="string"</div><div class="line">    android:testOnly=["true" | "false"]</div><div class="line">    android:theme="resource or theme" </div><div class="line">    android:uiOptions=["none" | "splitActionBarWhenNarrow"]</div><div class="line">    android:usesCleartextTraffic=["true" | "false"]</div><div class="line">    android:vmSafeMode=["true" | "false"]&gt;</div><div class="line">&lt;/application&gt;</div></pre></td></tr></table></figure>
-<p><strong>android:allowBackup</strong><br>开启或关闭应用程序数据的备份和恢复功能，注意该属性值默认为true，如果你不需要你的应用被恢复导致隐私数据暴露（如果值为true，甚至可以直接通过adb命令获取该应用中的数据），必须手动设置此属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 备份</div><div class="line">adb backup -nosystem -noshared -apk <span class="_">-f</span> d:/com.test.bak.ab com.test.bak</div><div class="line"></div><div class="line">-nosystem: 不备份系统应用</div><div class="line">-noshared: 不备份应用存储在SD中的数据</div><div class="line">-apk: 备份应用APK安装包</div><div class="line"><span class="_">-f</span> d:/com.test.bak.ab: 备份文件在PC上的路径</div><div class="line">com.test.bak: 要备份的包名</div><div class="line"></div><div class="line">// 恢复</div><div class="line">adb restore d:/com.test.bak.ab</div></pre></td></tr></table></figure></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span>?&gt;</span><br><span class="line"></span><br><span class="line">&lt;manifest&gt;</span><br><span class="line"></span><br><span class="line">    &lt;uses-permission /&gt;</span><br><span class="line">    &lt;permission /&gt;</span><br><span class="line">    &lt;permission-tree /&gt;</span><br><span class="line">    &lt;permission-group /&gt;</span><br><span class="line">    &lt;instrumentation /&gt;</span><br><span class="line">    &lt;uses-sdk /&gt;</span><br><span class="line">    &lt;uses-configuration /&gt;  </span><br><span class="line">    &lt;uses-feature /&gt;  </span><br><span class="line">    &lt;supports-screens /&gt;  </span><br><span class="line">    &lt;compatible-screens /&gt;  </span><br><span class="line">    &lt;supports-gl-texture /&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;application&gt;</span><br><span class="line">  		&lt;meta-data /&gt;</span><br><span class="line">        &lt;activity&gt;</span><br><span class="line">            &lt;intent-filter&gt;</span><br><span class="line">                &lt;action /&gt;</span><br><span class="line">                &lt;category /&gt;</span><br><span class="line">                &lt;data /&gt;</span><br><span class="line">            &lt;/intent-filter&gt;</span><br><span class="line">            &lt;meta-data /&gt;</span><br><span class="line">        &lt;/activity&gt;</span><br><span class="line"></span><br><span class="line">        &lt;activity-alias&gt;</span><br><span class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</span><br><span class="line">            &lt;meta-data /&gt;</span><br><span class="line">        &lt;/activity-alias&gt;</span><br><span class="line"></span><br><span class="line">        &lt;service&gt;</span><br><span class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</span><br><span class="line">            &lt;meta-data/&gt;</span><br><span class="line">        &lt;/service&gt;</span><br><span class="line"></span><br><span class="line">        &lt;receiver&gt;</span><br><span class="line">            &lt;intent-filter&gt; . . . &lt;/intent-filter&gt;</span><br><span class="line">            &lt;meta-data /&gt;</span><br><span class="line">        &lt;/receiver&gt;</span><br><span class="line"></span><br><span class="line">        &lt;provider&gt;</span><br><span class="line">            &lt;grant-uri-permission /&gt;</span><br><span class="line">            &lt;meta-data /&gt;</span><br><span class="line">            &lt;path-permission /&gt;</span><br><span class="line">        &lt;/provider&gt;</span><br><span class="line"></span><br><span class="line">        &lt;uses-library /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/application&gt;</span><br><span class="line"></span><br><span class="line">&lt;/manifest&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="AndroidManifest属性"><a href="#AndroidManifest属性" class="headerlink" title="AndroidManifest属性"></a>AndroidManifest属性</h3><h5 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;application  </span><br><span class="line">  	android:allowBackup=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">	android:allowClearUserData=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:allowTaskReparenting=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:backupAgent=<span class="string">"string"</span></span><br><span class="line">    android:backupInForeground=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:banner=<span class="string">"drawable resource"</span> </span><br><span class="line">    android:debuggable=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:description=<span class="string">"string resource"</span></span><br><span class="line">    android:enabled=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:extractNativeLibs=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:fullBackupContent=<span class="string">"string"</span></span><br><span class="line">    android:fullBackupOnly=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:hasCode=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:hardwareAccelerated=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:isGame=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:icon=<span class="string">"drawable resource"</span></span><br><span class="line">    android:killAfterRestore=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:label=<span class="string">"string resource"</span></span><br><span class="line">    android:largeHeap=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:logo=<span class="string">"drawable resource"</span></span><br><span class="line">    android:manageSpaceActivity=<span class="string">"string"</span></span><br><span class="line">    android:name=<span class="string">"string"</span></span><br><span class="line">    android:permission=<span class="string">"string"</span></span><br><span class="line">    android:persistent=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:process=<span class="string">"string"</span></span><br><span class="line">    android:restoreAnyVersion=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:requiredAccountType=<span class="string">"string"</span></span><br><span class="line">    android:resizeableActivity=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:restrictedAccountType=<span class="string">"string"</span></span><br><span class="line">    android:supportsRtl=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:taskAffinity=<span class="string">"string"</span></span><br><span class="line">    android:testOnly=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:theme=<span class="string">"resource or theme"</span> </span><br><span class="line">    android:uiOptions=[<span class="string">"none"</span> | <span class="string">"splitActionBarWhenNarrow"</span>]</span><br><span class="line">    android:usesCleartextTraffic=[<span class="string">"true"</span> | <span class="string">"false"</span>]</span><br><span class="line">    android:vmSafeMode=[<span class="string">"true"</span> | <span class="string">"false"</span>]&gt;</span><br><span class="line">&lt;/application&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>android:allowBackup</strong><br>开启或关闭应用程序数据的备份和恢复功能，注意该属性值默认为true，如果你不需要你的应用被恢复导致隐私数据暴露（如果值为true，甚至可以直接通过adb命令获取该应用中的数据），必须手动设置此属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 备份</span><br><span class="line">adb backup -nosystem -noshared -apk -f d:/com.test.bak.ab com.test.bak</span><br><span class="line"></span><br><span class="line">-nosystem: 不备份系统应用</span><br><span class="line">-noshared: 不备份应用存储在SD中的数据</span><br><span class="line">-apk: 备份应用APK安装包</span><br><span class="line">-f d:/com.test.bak.ab: 备份文件在PC上的路径</span><br><span class="line">com.test.bak: 要备份的包名</span><br><span class="line"></span><br><span class="line">// 恢复</span><br><span class="line">adb restore d:/com.test.bak.ab</span><br></pre></td></tr></table></figure></p>
 <p><strong>android:allowClearUserData</strong><br>默认为<code>true</code>。用户是否能选择自行清除数据，程序管理器包含一个选择允许用户清除数据。当为true时，用户可自己清理用户数据，反之亦然</p>
 <p><strong>android:allowTaskReparenting(‘true’ or ‘false’)</strong><br>默认值为<code>false</code>。是否允许activity<code>更换从属的任务。当该</code>Task<code>下一次被带到前面时，应用程序定义的</code>Activity<code>是否可以从启动它们的</code>Task<code>移动到有相同</code>affinity<code>的Task，比如从短信息任务切换到浏览器任务。Activity可以设置自己的</code>allowTaskReparenting`属性来覆盖Application节点下的这个属性。</p>
 <p><strong>android:backupAgent</strong><br>此属性没有默认值。实现应用backup代理的类名，它是BackupAgent的一个子类。这个属性值应该是一个完整的类名，如com.project.BackupAgent.。如果类名的第一个字母是”.”，它会附加到<code>mainfest</code>元素指定的包名之后。</p>
@@ -303,16 +248,6 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/AliPay.jpeg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/Wechat.jpeg">
-                      <span class="reward-type">微信</span>
-                    </div>
                     
                   </div>
                 </span>
@@ -550,6 +485,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">fe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hole</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
@@ -559,14 +502,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">stanford</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hole</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">fe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -642,7 +577,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://github.com/yzbzz" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>github</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
@@ -673,7 +608,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">目标设到月球，即使失败，也能落到众星之间。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     

@@ -8,53 +8,49 @@
   <link rel="dns-prefetch" href="yzbzz.github.io">
   <title>使用搬瓦工+ShadowsocksX进行科学上网 | Yzbzz&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读）
-前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。
-可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
+  <meta name="description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读） 前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。 可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
+<meta name="keywords" content="study">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用搬瓦工+ShadowsocksX进行科学上网">
 <meta property="og:url" content="yzbzz.github.io/2018/01/25/study/study-bwh/index.html">
-<meta property="og:site_name" content="Yzbzz's Blog">
-<meta property="og:description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读）
-前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。
-可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_host.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_cycle.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_cycle_more.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_location.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_detail.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_detail_pc.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_complete.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_pay.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_order_pay_complete.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home_client_area_top.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home_client_ares.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home_services.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home_services_detail.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_main.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_ss.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_new_os.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_new_os_info.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_main_new.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_ss_install.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_ss_completed.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_ss_info.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_ss_mac_os.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_ss_client.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_kiwi_all.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_ss_complete.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_ss_windows.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_home_services_detail.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_service_info.jpg">
-<meta property="og:image" content="yzbzz.github.io/img/study/bwh_service_detail.jpg">
-<meta property="og:updated_time" content="2018-01-30T06:54:06.248Z">
+<meta property="og:site_name" content="Yzbzz&#39;s Blog">
+<meta property="og:description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读） 前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。 可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="/img/study/bwh_home.jpg">
+<meta property="og:image" content="/img/study/bwh_host.jpg">
+<meta property="og:image" content="/img/study/bwh_order_cycle.jpg">
+<meta property="og:image" content="/img/study/bwh_order_cycle_more.jpg">
+<meta property="og:image" content="/img/study/bwh_order_location.jpg">
+<meta property="og:image" content="/img/study/bwh_order_detail.jpg">
+<meta property="og:image" content="/img/study/bwh_order_detail_pc.jpg">
+<meta property="og:image" content="/img/study/bwh_order_complete.jpg">
+<meta property="og:image" content="/img/study/bwh_order_pay.jpg">
+<meta property="og:image" content="/img/study/bwh_order_pay_complete.jpg">
+<meta property="og:image" content="/img/study/bwh_home_client_area_top.jpg">
+<meta property="og:image" content="/img/study/bwh_home_client_ares.jpg">
+<meta property="og:image" content="/img/study/bwh_home_services.jpg">
+<meta property="og:image" content="/img/study/bwh_home_services_detail.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_main.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_ss.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_new_os.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_new_os_info.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_main_new.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_ss_install.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_ss_completed.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_ss_info.jpg">
+<meta property="og:image" content="/img/study/bwh_ss_mac_os.jpg">
+<meta property="og:image" content="/img/study/bwh_ss_client.jpg">
+<meta property="og:image" content="/img/study/bwh_kiwi_all.jpg">
+<meta property="og:image" content="/img/study/bwh_ss_complete.jpg">
+<meta property="og:image" content="/img/study/bwh_ss_windows.jpg">
+<meta property="og:image" content="/img/study/bwh_home_services_detail.jpg">
+<meta property="og:image" content="/img/study/bwh_service_info.jpg">
+<meta property="og:image" content="/img/study/bwh_service_detail.jpg">
+<meta property="og:updated_time" content="2018-01-31T09:35:37.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用搬瓦工+ShadowsocksX进行科学上网">
-<meta name="twitter:description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读）
-前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。
-可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
-<meta name="twitter:image" content="yzbzz.github.io/img/study/bwh_home.jpg">
+<meta name="twitter:description" content="（温馨提示：本文图片较多，请在WIFI情况下阅读） 前言在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问google进行问题搜索，这时候就需要fan qiang进行科学上网了。 可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN">
+<meta name="twitter:image" content="/img/study/bwh_home.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Yzbzz&#39;s Blog" type="application/atom+xml">
   
@@ -83,7 +79,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/avatar.png" class="js-avatar">
+			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Yzbzz</a></h1>
@@ -93,23 +89,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/tags/android">Android</a></li>
+				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/ios">IOS</a></li>
-	        
-				<li><a href="/tags/java">Java</a></li>
-	        
-				<li><a href="/tags/fe">FE前端</a></li>
-	        
-				<li><a href="/tags/apple">MAC OS</a></li>
-	        
-				<li><a href="/tags/read">读书笔记</a></li>
-	        
-				<li><a href="/tags/blog">博客地址</a></li>
-	        
-				<li><a href="/tags/study">安装配置</a></li>
-	        
-				<li><a href="/tags/hole">踩过的坑</a></li>
+				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -131,13 +113,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -155,7 +137,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/avatar.png" class="js-avatar">
+				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Yzbzz</h1>
@@ -167,57 +149,29 @@
 			
 				
 			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/yzbzz" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yzbzz/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 11.11111111111111%"><a href="/tags/android">Android</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 11.11111111111111%"><a href="/tags/ios">IOS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/java">Java</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/fe">FE前端</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/apple">MAC OS</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/read">读书笔记</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/blog">博客地址</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/study">安装配置</a></li>
-		        
-					<li style="width: 11.11111111111111%"><a href="/tags/hole">踩过的坑</a></li>
+					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -256,13 +210,13 @@
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在天朝，因为qian的原因，很多外网是访问不了的。身为程序员，很多时候是需要访问<code>google</code>进行问题搜索，这时候就需要fan qiang进行科学上网了。</p>
 <p>可能有相当一部分人是买的VPN进行科学上网，但VPN一般比较贵，也不稳定，不如自己搭建VPS（相当于自己买一台海外服务器），一方面可以可以学习一下Linux，一方面还可以科学上网，还比VPN便宜不少。</p>
 <a id="more"></a>
-<h3 id="VPS购买"><a href="#VPS购买" class="headerlink" title="VPS购买"></a>VPS购买</h3><p>其实VPS搭建还是比较简单的，本文使用搬瓦工(Bandwagon)，搬瓦工对新手比较友好，而且官方支持ShadowsocksX，最重要的是支持<code>支付宝</code>，省去了很多麻烦，官网：<a href="https://bwh1.net" target="_blank" rel="external">https://bwh1.net</a></p>
+<h3 id="VPS购买"><a href="#VPS购买" class="headerlink" title="VPS购买"></a>VPS购买</h3><p>其实VPS搭建还是比较简单的，本文使用搬瓦工(Bandwagon)，搬瓦工对新手比较友好，而且官方支持ShadowsocksX，最重要的是支持<code>支付宝</code>，省去了很多麻烦，官网：<a href="https://bwh1.net" target="_blank" rel="noopener">https://bwh1.net</a></p>
 <p>首选进入官网</p>
 <p><img src="/img/study/bwh_home.jpg" alt="bwh_home"></p>
 <p>点击<code>VPS Hosting</code>，进入到VPS Hosting页面，我们先选择最便宜的一款，购买完成后可以根据自身情况进行升降服务器，后续会介绍如何升降。KVM是新的架构，OVZ是老的架构，大家要选Order KVM，不要选错了。</p>
 <blockquote>
 <p>大家不知道选哪个的话，可以网上搜一搜，推荐个地方：</p>
-<p><a href="http://banwagong.cn/gonglue.html" target="_blank" rel="external">http://banwagong.cn/gonglue.html</a></p>
+<p><a href="http://banwagong.cn/gonglue.html" target="_blank" rel="noopener">http://banwagong.cn/gonglue.html</a></p>
 </blockquote>
 <p><img src="/img/study/bwh_host.jpg" alt="bwh_host"></p>
 <p>点击<code>Order KVM</code>，进入到详情页面，因为<code>搬瓦工</code>的VPS是经常变换的，可能你看到的页面和我的不太一样，不过没关系，下面我们会说到。</p>
@@ -309,7 +263,7 @@
 <p><img src="/img/study/bwh_kiwi_ss.jpg" alt="bwh_kiwi_ss"></p>
 <p>从图中，我们可以看过，<code>ShadowsocksR Server</code>只支持<code>Centos 6 (32 or 64 bit)</code>的系统 ，所以我们需要重装一个<code>Centos 6 (32 or 64 bit)</code>的系统。</p>
 <p>点击左边的<code>Install new OS</code>，选择<code>centos-6-x86_64-bbr</code>，进行重装系统</p>
-<p><strong>重要：如果希望自行安装shadowsocks(可以配置单、多用户)，可以选择<code>centos-7-x86_64-bbr</code>，建议大家选择自行安装(<a href="http://localhost:4000/2018/01/26/study/study-bwh-ss/" target="_blank" rel="external">shadowsocks多用户配置</a>)，不喜欢折腾的，可以继续往下看</strong></p>
+<p><strong>重要：如果希望自行安装shadowsocks(可以配置单、多用户)，可以选择<code>centos-7-x86_64-bbr</code>，建议大家选择自行安装(<a href="http://localhost:4000/2018/01/26/study/study-bwh-ss/" target="_blank" rel="noopener">shadowsocks多用户配置</a>)，不喜欢折腾的，可以继续往下看</strong></p>
 <p><img src="/img/study/bwh_kiwi_new_os.jpg" alt="bwh_kiwi_new_os"></p>
 <p>点击<code>reload</code>，进行重装系统 ，同时会进入下面的界面</p>
 <p><img src="/img/study/bwh_kiwi_new_os_info.jpg" alt="bwh_kiwi_new_os_info"></p>
@@ -318,7 +272,7 @@
 <p>稍等一会，刷新页面，点击左侧的<code>Main controls</code>，出现下面的界面，表示系统安装成功</p>
 <p><img src="/img/study/bwh_kiwi_main_new.jpg" alt="bwh_kiwi_main_new"></p>
 <p>接下来，我们要安装<code>ShadowsocksX</code>服务</p>
-<h3 id="ShadowsocksX服务安装"><a href="#ShadowsocksX服务安装" class="headerlink" title="ShadowsocksX服务安装"></a>ShadowsocksX服务安装</h3><p><strong>重要：希望自行安装shadowsocks的用户可以跳过此步，传送门:<a href="http://localhost:4000/2018/01/26/study/study-bwh-ss/" target="_blank" rel="external">shadowsocks多用户配置</a></strong></p>
+<h3 id="ShadowsocksX服务安装"><a href="#ShadowsocksX服务安装" class="headerlink" title="ShadowsocksX服务安装"></a>ShadowsocksX服务安装</h3><p><strong>重要：希望自行安装shadowsocks的用户可以跳过此步，传送门:<a href="http://localhost:4000/2018/01/26/study/study-bwh-ss/" target="_blank" rel="noopener">shadowsocks多用户配置</a></strong></p>
 <p>点击左侧的<code>ShadowsocksR Server</code></p>
 <p><img src="/img/study/bwh_kiwi_ss_install.jpg" alt="bwh_kiwi_ss_install"></p>
 <p>等待安装完成，出现下面界面，表示安装成功</p>
@@ -327,7 +281,7 @@
 <p><img src="/img/study/bwh_kiwi_ss_info.jpg" alt="bwh_kiwi_ss_info"></p>
 <p>至此，我们的ShadowsocksX服务安装完成，接下来，我们需要安装<code>ShadowsocksX</code>客户端</p>
 <h3 id="ShadowsocksX客户端安装"><a href="#ShadowsocksX客户端安装" class="headerlink" title="ShadowsocksX客户端安装"></a>ShadowsocksX客户端安装</h3><p>这里以<code>Mac OS</code>系统为例，其它平台可以参考下面文章</p>
-<h5 id="Mac平台"><a href="#Mac平台" class="headerlink" title="Mac平台"></a>Mac平台</h5><p>点击<a href="https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help</a></p>
+<h5 id="Mac平台"><a href="#Mac平台" class="headerlink" title="Mac平台"></a>Mac平台</h5><p>点击<a href="https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help</a></p>
 <p><img src="/img/study/bwh_ss_mac_os.jpg" alt="bwh_ss_mac_os"></p>
 <p>点击图中标示的链接，会进入到一个下载页，点击<code>Download</code>开始下载，下载完成后安装，安装成功后，打开<code>ShadowsocksX</code>，打开后，会在菜单出现一个<code>纸飞机图标</code>，点击它</p>
 <p><img src="/img/study/bwh_ss_client.jpg" alt="bwh_ss_client"></p>
@@ -335,9 +289,9 @@
 <p><img src="/img/study/bwh_kiwi_all.jpg" alt="bwh_kiwi_all"></p>
 <p>照着填就可以了，填完点击<code>确定</code>。大功告成，可以科学上网啦！(依然上不了的，可以把客户端软件关了，再重开)</p>
 <p><img src="/img/study/bwh_ss_complete.jpg" alt="bwh_ss_complete"></p>
-<h5 id="Windows平台"><a href="#Windows平台" class="headerlink" title="Windows平台"></a>Windows平台</h5><p>点击<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
+<h5 id="Windows平台"><a href="#Windows平台" class="headerlink" title="Windows平台"></a>Windows平台</h5><p>点击<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
 <p><img src="/img/study/bwh_ss_windows.jpg" alt="bwh_ss_windows"></p>
-<h5 id="其它平台"><a href="#其它平台" class="headerlink" title="其它平台"></a>其它平台</h5><p>地址：<a href="https://github.com/shadowsocks?page=1" target="_blank" rel="external">https://github.com/shadowsocks?page=1</a></p>
+<h5 id="其它平台"><a href="#其它平台" class="headerlink" title="其它平台"></a>其它平台</h5><p>地址：<a href="https://github.com/shadowsocks?page=1" target="_blank" rel="noopener">https://github.com/shadowsocks?page=1</a></p>
 <p>自己慢慢找吧(^^)</p>
 <h3 id="VPS服务器升降"><a href="#VPS服务器升降" class="headerlink" title="VPS服务器升降"></a>VPS服务器升降</h3><p>还记得文章上述的这个界面吗</p>
 <p><img src="/img/study/bwh_home_services_detail.jpg" alt="bwh_home_services_detail"></p>
@@ -361,16 +315,6 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/AliPay.jpeg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/Wechat.jpeg">
-                      <span class="reward-type">微信</span>
-                    </div>
                     
                   </div>
                 </span>
@@ -459,18 +403,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/25/study/Centenos/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/01/26/study/study-bwh-ss/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Linux
+          shadowsocks多用户配置
         
       </div>
     </a>
   
   
-    <a href="/2017/07/12/fe/css-background/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css-background</div>
+    <a href="/2018/01/25/study/Centenos/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -608,6 +552,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">fe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hole</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
@@ -617,14 +569,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">stanford</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hole</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">fe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -700,7 +644,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://github.com/yzbzz" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>github</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
@@ -731,7 +675,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">目标设到月球，即使失败，也能落到众星之间。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
