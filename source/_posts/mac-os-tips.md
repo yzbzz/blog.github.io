@@ -11,3 +11,9 @@ tags: apple
 ```java
 sudo spctl --master-disable
 ```
+**显示文件隐藏文件夹**
+
+```
+command + shift + .
+```
+

@@ -6,9 +6,9 @@ tags: study
 
 ### 前言
 
-之前一篇文章，我们讲了[使用搬瓦工+ShadowsocksX进行科学上网](/2018/01/25/study/study-bwh/)，我们使用的是`搬瓦工`自己的服务进行安装的，还没有看的同学请先看下。本篇主要讲解如何使用命令行的方式进行安装`shadowsocks`，配置单用户和多用户。
+之前一篇文章，我们讲了[合适懒人的搬瓦工+ShadowsocksX教程](/2018/02/26/study/study-bwh-ssr/)，我们使用的是`搬瓦工`自己的服务进行安装的，还没有看的同学请先看下。本篇主要讲解如何使用命令行的方式进行安装`shadowsocks`，配置单用户和多用户。
 
-如何进入服务器: [使用SSH客户端(Termius)连接服务器](/2018/01/30/study/study-centenos-ssh/)
+如何进入服务器: [使用SSH客户端(Termius)连接服务器](/2018/01/30/study/study-centos-ssh/)
 
 <!-- More -->
 
