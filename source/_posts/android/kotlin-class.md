@@ -18,7 +18,8 @@ class User constructor (_nickname: String) {
 ```
 
 > 和`java`不同，在`java`中，初始化代码是写在构造方法里面的，而`kotlin`是写在`init`方法里。
->
+
+<!--more-->
 
 在上面的例子中，不需要把初始化代码放在初始化语句块中，因为它可以与`nickname`属性的声明结合。如果主构造方法没有注解或可见性修饰符，同样可以去掉`constructor`关键字。
 

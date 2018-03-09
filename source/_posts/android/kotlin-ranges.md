@@ -16,6 +16,8 @@ start..end -> start.rangeTo(end)
 
 整型区间（`IntRange`、 `LongRange`、 `CharRange`）可以迭代。 编译器会无额外开销的将它们转换为类似 Java 的基于索引的 *for*-循环
 
+<!--more-->
+
 #### in(闭区间)
 
 ```kotlin
