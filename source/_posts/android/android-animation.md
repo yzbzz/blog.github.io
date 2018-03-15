@@ -1,5 +1,5 @@
 ---
-title: android-animation
+title: Android动画描述
 date: 2016-05-19 10:54:29
 tags: android
 ---

@@ -228,26 +228,6 @@ println(Point(10, 20) != Point(5, 5)) // true
 println(null == Point(1, 2)) // false
 ```
 
-| 表达式   | 函数名     |
-| -------- | ---------- |
-| +a       | unaryPlus  |
-| -a       | unaryMinus |
-| !a       | not        |
-| ++a, a++ | inc        |
-| —a, a--  | dec        |
-
-示例：
-
-```kotlin
-operator fun Point.unaryMinus(): Point {
-    return Point(-x, -y)
-}
-val p = Point(10, 20)
-println(-p) // Point(x=10, y=-20)
-```
-
-
-
 #### 比较操作符(compareTo)
 
 | 表达式 | 对应函数            |

@@ -1,8 +1,10 @@
 ---
-title: kotlin委托
+title: Kotlin委托
 date: 2018-03-09 11:15:35
 tags: [android, kotlin]
 ---
+
+
 
 ### 类委托
 
@@ -131,7 +133,7 @@ class Person(val name: String, age: Int, salary: Int): PropertyChangeAware() {
 }
 ```
 
-如果你想能够截获一个赋值并否决它，可以使用`vetoable`代替`observable`
+如果你想能够截获一个赋值并做一些条件判断，可以使用`vetoable`代替`observable`
 
 ```kotlin
 class Person(val name: String, age: Int, salary: Int): PropertyChangeAware() {

@@ -1,5 +1,5 @@
 ---
-title: RecyclerView
+title: RecyclerView添加快速滚动
 date: 2018-03-06 11:10:28
 tags: android
 ---
@@ -12,11 +12,13 @@ tags: android
 listView.setFastScrollEnabled(true)
 ```
 
-在`RecyclerView`中，并没有提供快速滚动的API。但是现在在Android Support Library 26，官方终于提供了。让我们开始吧。
+在`RecyclerView`中，之前官方并没有提供快速滚动的API。但是现在在Android Support Library 26，官方终于提供了。让我们开始吧。
 
 <!--more-->
 
 **首先你需要进行以下配置**
+
+*版本要是26以上哦*
 
 ```groovy
 dependencies {

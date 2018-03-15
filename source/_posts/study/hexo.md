@@ -22,7 +22,13 @@ npm install hexo-deployer-git --save
 
 `Permission denied (publickey).`
 
-推荐看此博客：http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+推荐博客：
+
+http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+
+[最适合新手的 GitHub + Hexo 「大话」博客搭建教程](https://smartbeng.github.io/2017/03/26/blogFinish/)
+
+[新手搭建博客过程](http://liuqingwen.me/blog/2017/04/11/hexo-blog-creation-work-progress/)
 
 ### Hexo常用命令
 

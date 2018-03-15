@@ -41,13 +41,13 @@ gij (GNU libgcj) version 4.3.3
 
 ##### 使用如下命令
 
-1. **先删除旧的`java`**
+1、**先删除旧的`java`**
 
 ```python
 yum remove java
 ```
 
-2. **查看`OpenJDK`版本**
+2、**查看`OpenJDK`版本**
 
 ```
 yum search openjdk
@@ -64,7 +64,7 @@ java-1.8.0-openjdk-accessibility.x86_64 : OpenJDK accessibility connector
 ...
 ```
 
-3. **安装`OpenJDK`**
+3、**安装`OpenJDK`**
 
 ```python
 yum install java-1.8.0-openJDK

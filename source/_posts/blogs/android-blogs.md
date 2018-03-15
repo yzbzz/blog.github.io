@@ -4,6 +4,12 @@ date: 2017-01-10 16:25:55
 tags: blog
 ---
 
+### Kotlin
+
+[Kotlin 资源大全 - 学 Kotlin 看这一篇教程就够了](https://juejin.im/post/591dd9f544d904006c9fbb96)
+
+[【学习笔记】区别Kotlin中的object和companion object关键字](http://liuqingwen.me/blog/2017/06/20/object-vs-companion-object-in-kotlin/)
+
 ### Blogs
 
 ------
