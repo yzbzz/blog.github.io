@@ -13,7 +13,9 @@ tags: life
 
 1、精读5本编程书籍，编写20篇技术文章
 
-​	已完成8篇
+​	已读书本：《kotlin in action》《kotlin-for-android-developers》
+
+​	已完成8篇技术文章
 
 2、练字，练完2本楷书字帖，2本行楷字帖
 

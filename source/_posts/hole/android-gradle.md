@@ -4,6 +4,16 @@ date: 2018-02-07 10:20:42
 tags: hole
 ---
 
+**解决Kotlin和DataBinding冲突 Unresolved reference: databinding**
+
+在主工程的`build.gradle`文件添加下面一行
+
+```
+dependencies {
+    kapt "com.android.databinding:compiler:3.0.0"
+}
+```
+
 **Failed to open zip file**
 
 当我们编译项目时，有时会出现

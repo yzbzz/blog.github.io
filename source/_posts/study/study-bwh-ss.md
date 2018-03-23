@@ -52,6 +52,12 @@ vi /etc/shadowsocks.json
 }
 ```
 
+> `my_server_ip `填你的服务器地址
+>
+> 8388填你的端口(自定义的，可能不更改，保留8388)
+>
+> `mypassword`填写你要设置的密码
+
 **多用户配置**
 
 ```python
@@ -62,7 +68,7 @@ vi /etc/shadowsocks.json
     "port_password":{
     	"端口1":"密码1",
     	"端口2":"密码2",
-    	"端口3":"密码3",
+    	"端口3":"密码3"
     },
     "timeout":600,
     "method":"rc4-md5",
@@ -70,17 +76,13 @@ vi /etc/shadowsocks.json
 }
 ```
 
-- 单用户：
-  - `my_server_ip `填你的服务器地址
-  - 8388填你的端口(自定义的，可能不更改，保留8388)
-  - `mypassword`填写你要设置的密码
-- 多用户
-  - `my_server_ip `填你的服务器地址
-  - `端口1、密码1`填你要分配给客户端的端口和密码，比如'8388':"123456"，后面的端口、密码同理
-
-> 注意`method`一栏，默认是`aes-256-cfb`，这里改为`rc4-md5`，这样上网会快一些，相应的客户端加密也要改成`rc4-md5`，别忘了
+> `my_server_ip `填你的服务器地址
 >
-> 这里设置的项都是给你客户端连接时使用的
+> `端口1、密码1`填你要分配给客户端的端口和密码，比如'8388':"123456"，后面的端口、密码同理
+
+**注意**：`method`一栏，默认是`aes-256-cfb`，这里改为`rc4-md5`，这样上网会快一些，相应的客户端加密也要改成`rc4-md5`，别忘了
+
+这里设置的项都是给你客户端连接时使用的
 
 **第三步**，开启或关闭服务
 
@@ -97,5 +99,19 @@ ssserver -c /etc/shadowsocks.json -d start
 ```python
 ssserver -c /etc/shadowsocks.json -d stop
 ```
+
+**开机自启动**
+
+```
+vi /etc/rc.local
+```
+
+在`rc.local`中添加
+
+```
+sudo ssserver -c /etc/shadowsocks.json -d start
+```
+
+
 
 大功告成，愉快的玩耍吧(^^)
