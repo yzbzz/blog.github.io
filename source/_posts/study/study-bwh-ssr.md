@@ -4,7 +4,7 @@ date: 2018-02-26 14:09:55
 tags: study
 ---
 
-**建议大家自行安装shadowsocks(可以配置单、多用户)，传送门：[shadowsocks多用户配置](http://localhost:4000/2018/01/26/study/study-bwh-ss/)，不喜欢折腾的，可以继续往下看**
+**建议大家自行安装shadowsocks(可以配置单、多用户)，传送门：[shadowsocks多用户配置](/2018/01/26/study/study-bwh-ss/)，不喜欢折腾的，可以继续往下看**
 
 ### VPS服务器搭建
 

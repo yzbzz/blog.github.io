@@ -158,3 +158,5 @@ http://zhengxiaoyong.me/categories/
 
 [如何避免使用onActivityResult，以提高代码可读性](https://juejin.im/post/5a4611786fb9a0451a76b565)
 
+[分享两个提高效率的AndroidStudio小技巧](https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650825268&idx=1&sn=449a6d4a71872560fcb087f41e7ec7cc&chksm=80b7b6aab7c03fbc17a4cb6f1dd96ebfd99244c311fff2e3cb2cc613a3cfdfc1b0e12f71478a&scene=38#wechat_redirect)
+

@@ -1,5 +1,5 @@
 ---
-title: Kotlin详见集合与操作符
+title: Kotlin详解集合与操作符
 date: 2018-03-14 10:06:08
 tags: [android, kotlin]
 ---
