@@ -1,5 +1,5 @@
 ---
-title: java 运行时注解(RetentionPolicy.RUNTIME)
+title: Java 运行时注解(RetentionPolicy.RUNTIME)
 date: 2018-04-13 16:07:34
 tags: [java, Annotation]
 ---
@@ -15,6 +15,8 @@ tags: [java, Annotation]
 | ElementType.FIELD       | `Field`.getAnnotation()       | 通过Field对象获取注解       |
 | ElementType.METHOD      | `Method`.getAnnotation()      | 通过Method对象获取注解      |
 | ...                     | ...                           | ...                         |
+
+<!-- More -->
 
 一些常见的获取注解的方法
 

@@ -326,3 +326,40 @@ android {
 ```
 
 添加aaptOptions一栏
+
+**解决viewpager滑动不流畅的问题**
+
+```java
+public class customViewpagerView extends ViewPager {  
+  
+    private int preX=0;  
+    public customViewpagerView(Context context, AttributeSet attrs) {  
+        super(context, attrs);  
+          
+    }  
+    public customViewpagerView(Context context) {  
+        super(context);  
+          
+    }  
+      
+    @Override  
+    public boolean onInterceptTouchEvent(MotionEvent even) {  
+          
+        if(even.getAction()==MotionEvent.ACTION_DOWN)  
+        {  
+            preX=(int) even.getX();  
+        }else  
+        {  
+            if(Math.abs((int)even.getX()-preX)>10)  
+            {  
+                return true;  
+            }else  
+            {  
+                preX=(int) even.getX();  
+            }  
+        }  
+        return super.onInterceptTouchEvent(even);  
+    }  
+}  
+```
+

@@ -24,6 +24,8 @@ tags: [java, Annotation]
 - 代码分析：通过代码里标识的元数据对代码进行分析【使用反射】。
 - 编译检查：通过代码里标识的元数据让编译器能实现基本的编译检查【Override】。
 
+<!-- More -->
+
 ### 语法
 
 示例：
@@ -132,20 +134,8 @@ public enum ElementType {
     LOCAL_VARIABLE, // 局部变量声明
     ANNOTATION_TYPE, // 注解声明
     PACKAGE, // 包声明
-
-    /**
-     * Type parameter declaration
-     *
-     * @since 1.8
-     */
-    TYPE_PARAMETER,
-
-    /**
-     * Use of a type
-     *
-     * @since 1.8
-     */
-    TYPE_USE
+    TYPE_PARAMETER, // 泛型参数声明 (自1.8提供)
+    TYPE_USE, // 泛型声明 (自1.8提供)
 }
 ```
 

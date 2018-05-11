@@ -160,3 +160,15 @@ http://zhengxiaoyong.me/categories/
 
 [分享两个提高效率的AndroidStudio小技巧](https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650825268&idx=1&sn=449a6d4a71872560fcb087f41e7ec7cc&chksm=80b7b6aab7c03fbc17a4cb6f1dd96ebfd99244c311fff2e3cb2cc613a3cfdfc1b0e12f71478a&scene=38#wechat_redirect)
 
+[Android ValueAnimator时长错乱或者不起作用的解决方法以及问题分析](https://blog.csdn.net/u011387817/article/details/78628956)
+
+[[译] 探索 Android Design Support Library v28 新增内容](https://tonnyl.github.io/2018/04/22/Translation-Exploring-the-v28-Android-Design-Support-Library-Additions/)
+
+[AspectJ在Android中的应用](http://www.goluck.top/2017/06/11/AspectJ在Android中的应用/)
+
+[Android小技巧 提升开发效率](https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650825002&idx=1&sn=1ee33c018bc52408e99962c0515e0702&chksm=80b7b5b4b7c03ca2fbc02c18cb2524d23dc431a2edbc1a1b6dacb7250967202efedc00c3bfe5&scene=38#wechat_redirect)
+
+[Android Studio使用技巧系列教程（三）](https://blog.csdn.net/growth58/article/details/46787737)
+
+
+

@@ -1,7 +1,7 @@
 ---
 title: mac-os-tips
 date: 2017-02-10 15:28:39
-tags: apple
+tags: study
 ---
 
 ### Tips

@@ -7,14 +7,15 @@ menu:
   IOS: /tags/ios
   Java: /tags/java
   FE前端: /tags/fe
-  MAC OS : /tags/apple
-  学习生活: /tags/life
   读书笔记: /tags/read
   博客地址: /tags/blog
   # 设计模式: /tags/design
   # 所有文章: /archives
   安装配置: /tags/study
   踩过的坑: /tags/hole
+  学习生活: /tags/life
+  写不成诗: /tags/poetry
+  开心一笑: /tags/smile
 
 # SubNav
 subnav:

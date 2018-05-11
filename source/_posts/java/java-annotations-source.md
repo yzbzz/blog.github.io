@@ -1,5 +1,5 @@
 ---
-title: java 源码注解(RetentionPolicy.SOURCE)
+title: Java 源码注解(RetentionPolicy.SOURCE)
 date: 2018-04-13 16:00:56
 tags: [java, Annotation]
 ---
@@ -7,6 +7,8 @@ tags: [java, Annotation]
 ### 前言
 
 通过之前的文章[Java 注解介绍](/2018/04/12/java/java-annotations/)，我们了解到源码注解(`RetentionPolicy.SOURCE`)的生命周期只存在Java源文件这一阶段，是3种生命周期中最短的注解。当在Java源程序上加了一个注解，这个Java源程序要由javac去编译，javac把java源文件编译成.class文件，在编译成class时会把Java源程序上的源码注解给去掉。需要注意的是，在编译器处理期间源码注解还存在，即`注解处理器Processor` 也能处理源码注解，编译器处理完之后就没有该注解信息了。
+
+<!-- More -->
 
 ### 定义源码注解
 

@@ -18,10 +18,35 @@ tags: study
 
 进入后拖动页面，找到自己的服务器版本，我们这里以`CentOS`为例:
 
+#### 安装Git
+
+安装shadowsocks，需要先安装`git`
+
+**CentOS**
+
+```python
+yum install -y git
+```
+
+**Debian / Ubuntu**
+
+```python
+apt-get install -y git
+```
+
 #### 安装shadowsocks
+
+**CentOS**
 
 ```python
 yum install python-setuptools && easy_install pip
+pip install git+https://github.com/shadowsocks/shadowsocks.git@master
+```
+
+**Debian / Ubuntu**
+
+```python
+apt-get install python-pip
 pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 ```
 
@@ -83,6 +108,8 @@ vi /etc/shadowsocks.json
 **注意**：`method`一栏，默认是`aes-256-cfb`，这里改为`rc4-md5`，这样上网会快一些，相应的客户端加密也要改成`rc4-md5`，别忘了
 
 这里设置的项都是给你客户端连接时使用的
+
+填好后，按`ESC`键退出编辑模式，输出`:wq`保存退出
 
 **第三步**，开启或关闭服务
 
