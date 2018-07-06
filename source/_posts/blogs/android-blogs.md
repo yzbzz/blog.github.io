@@ -14,6 +14,8 @@ tags: blog
 
 ------
 
+[安卓自定义View进阶 - 贝塞尔曲线](https://blog.csdn.net/u013831257/article/details/51281136)
+
 [带你全面了解Glide 4的用法](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650242045&idx=1&sn=6250b01cb51387c546824e0a754ef153&chksm=88638a92bf140384df375e5424c04a21bbbd13fbd4b761c40fd556b83e3959fa900da4a33e0d&scene=38#wechat_redirect)
 
 [从零开始的Android新项目2 - Gradle篇](http://blog.zhaiyifan.cn/2016/03/14/android-new-project-from-0-p2/)
@@ -170,5 +172,12 @@ http://zhengxiaoyong.me/categories/
 
 [Android Studio使用技巧系列教程（三）](https://blog.csdn.net/growth58/article/details/46787737)
 
+[RecycleView的拖动排序](https://www.jianshu.com/p/557923bf3864)
 
+[彻底弄清support支持库，以及v4 v7重复依赖问题深究](https://www.jianshu.com/p/f769ea6db2c1)
 
+[贝塞尔曲线](https://www.cnblogs.com/wjtaigwh/category/975679.html)
+
+[*http://jcenter.bintray.com/*
+
+*https://dl.google.com/dl/android/maven2/index.html*

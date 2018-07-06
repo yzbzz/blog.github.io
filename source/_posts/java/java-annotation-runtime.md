@@ -167,6 +167,22 @@ public String method() {
 }
 ```
 
+如果注解包含多个成员，并且成员都有默认值，并且有一个成员名称定义为`value`，则可以像下面这样简化调用
+
+```java
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ContentType {
+	String type() default "";
+	String value() default "";
+}
+==>
+@ContentType("UI")
+public class UIFragment {
+}
+```
+
+对于上面这种情况，`ContentType`注解的`type`会使用默认值`""`，`value`的值为上面定义的`UI`
+
 ### 获取运行时注解信息
 
 因为我们定义的是`RetentionPolicy.RUNTIME`的注解，所以我们可以在运行时拿到注解的信息**(需要反射获取)**

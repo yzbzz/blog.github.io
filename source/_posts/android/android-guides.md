@@ -106,3 +106,20 @@ float ydpi = getResources().getDisplayMetrics().ydpi;
 
 因为在 OnCreate 的 时候，View 是还没有被 ViewRootImpl
 加载到 Window，所以子线程修改 View 的代码没有经过 ViewRootImpl 的检测。贯穿全文，就告诉了大家在 onResum 之前在子线程可以修改 UI，具体原因没讲清楚。可以讲讲 contentView 是怎样被ViewRootImplement 加载到 Window。Window、Activity、View、ViewRootImpl 之间的关系？
+
+**如果你的app必须要使用本地lib引入v4库，那么就排除开源库的v4包**
+
+```
+compile('com.facebook.fresco:fresco:0.10.0') {
+       exclude module: 'support-v4'
+}
+```
+
+如果是源码形式引入的开源库
+
+```
+compile (project(':thirdpart:RecyclerViewAdapterLibrary')){ 
+     exclude group: 'com.android.support' 
+}
+```
+

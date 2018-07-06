@@ -12,4 +12,19 @@ tags: poetry
 
   有人住高楼,有人在深沟,有人光万丈,有人一身锈,世人万千种,浮云莫去求,斯人若彩虹,遇上方知有
 
-- 
+- If he likes cake, he will not like you, even if you're the best chocolate. But always remember, to be the best of yourself, the right person will like you. 
+
+  也对
+  自己是梧桐，凤凰才会来栖，自己是大海，百川才来汇聚
+  花香自有蝶舞来，日子没到强求又何必
+  做全世界最棒的巧克力，你自然会碰见来自四面八方的巧克力爱好者。
+
+   
+
+   
+
+   
+
+   
+
+   

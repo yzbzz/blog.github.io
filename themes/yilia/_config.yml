@@ -13,9 +13,9 @@ menu:
   # 所有文章: /archives
   安装配置: /tags/study
   踩过的坑: /tags/hole
-  学习生活: /tags/life
-  写不成诗: /tags/poetry
-  开心一笑: /tags/smile
+  # 学习生活: /tags/life
+  # 写不成诗: /tags/poetry
+  # 开心一笑: /tags/smile
 
 # SubNav
 subnav:
