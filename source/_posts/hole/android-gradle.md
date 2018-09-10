@@ -89,3 +89,17 @@ buildTypes {
 </style>
 ```
 
+**error:execution failed for task ':app:transformnativelibswithstripdebugsymbolfordebug'.**
+
+删除`/sdk/ndk-bundle`
+
+### Vivo 手机使用 Android studio安装APK失败的解决办法
+
+在工程目录的`gradle.properties`中添加`android.injected.testOnly = false`即可
+
+### 解决Android Studio在XML中使用自定义View输入自定义属性的时候没有任何提示的问题
+
+```
+我们在自定义View和自定义属性的时候，要保持自定义View的className和自定义属性的的declare-styleable名一样，根据这个约定，IDE才会自动提示
+```
+

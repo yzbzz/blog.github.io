@@ -123,3 +123,20 @@ compile (project(':thirdpart:RecyclerViewAdapterLibrary')){
 }
 ```
 
+**exclude group:表示只要包含com.android.support的都排除** 
+
+```
+api("com.afollestad.material-dialogs:core:0.9.5.0") {
+        exclude group: 'com.android.support'
+}
+```
+
+**module：删排除group中的指定module** 
+
+```
+ api("com.afollestad.material-dialogs:core:0.9.5.0") {
+        exclude group: 'com.android.support', module: 'support-v13'
+        exclude group: 'com.android.support', module: 'support-vector-drawable'
+    }
+```
+

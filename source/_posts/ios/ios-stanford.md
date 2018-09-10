@@ -21,3 +21,7 @@ tags: [ios,stanford]
 ![ios05](/img/swift/ios05.jpg)
 
 > 在未设置bounds的情况下，bounds是相对于view自身坐标的，以view自身的左上角为原点(0,0)，如上图所示，不管怎么旋转view，bounds始终是一样的
+
+
+
+https://www.cnblogs.com/ming1025/p/6125706.html

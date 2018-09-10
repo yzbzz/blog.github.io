@@ -363,3 +363,10 @@ public class customViewpagerView extends ViewPager {
 }  
 ```
 
+# 解决设置控件Alpha透明引发的问题
+
+```
+findViewById(R.id.login_whitebg)).getBackground().mutate().setAlpha(204);
+// https://www.jianshu.com/p/4d89fe683664
+```
+

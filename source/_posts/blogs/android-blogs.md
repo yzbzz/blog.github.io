@@ -181,3 +181,7 @@ http://zhengxiaoyong.me/categories/
 [*http://jcenter.bintray.com/*
 
 *https://dl.google.com/dl/android/maven2/index.html*
+
+[仿微信朋友圈，点击评论，生成自定义超链接，并处理](https://blog.csdn.net/xxxiu/article/details/40736057)
+
+[安卓 TextView 七宗罪](https://blog.csdn.net/zhaizu/article/details/51038113)

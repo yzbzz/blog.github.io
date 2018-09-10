@@ -214,8 +214,8 @@ public @interface SuppressWarnings {
 
 关于自定义注解，请移步
 
-[java 自定义源码注解](/2018/01/25/study/study-bwh/)
+[java 自定义源码注解](/2018/04/13/java/java-annotations-source/)
 
-[java 自定义编译时注解](/2018/01/25/study/study-bwh/)
+[java 自定义编译时注解](/2018/04/13/java/java-annotation-class/)
 
-[java 自定运行时注解](/2018/01/25/study/study-bwh/)
+[java 自定运行时注解](/2018/04/13/java/java-annotation-runtime/)
