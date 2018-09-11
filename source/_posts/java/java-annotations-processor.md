@@ -8,6 +8,8 @@ tags: [java, Annotation]
 
 注解处理器(Annotation Processor Tool)是`javac`的一个工具，主要用于在编译时处理`编译时注解RetentionPolicy.CLASS）`。我们可以自定义注解处理器，获取我们自定义的注解信息，通过注解信息生成`java`文件(如： [ButterKnife](https://github.com/JakeWharton/butterknife))或进行其它的一些操作
 
+<!-- More -->
+
 ### 自定义注解处理器
 
 自定义注解处理器需要继承于`AbstractProcessor`，一般我们会重写下面4个方法

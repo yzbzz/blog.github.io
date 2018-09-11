@@ -121,12 +121,14 @@ public interface Element extends javax.lang.model.AnnotatedConstruct {
 
 主要方法
 
-| 方法名                | 返回值                                 | 描述                                                   |
-| --------------------- | -------------------------------------- | ------------------------------------------------------ |
-| getKind()             | <a href="#ElementKind">ElementKind</a> |                                                        |
-| asType()              | <a href="#TypeMirror">TypeMirror</a>   | 返回元素的数据类型（基本类型、引用类型、数组类型等等） |
-| getSimpleName()       | Name                                   |                                                        |
-| getEnclosingElement() | Element                                |                                                        |
+| 方法名                | 返回值                                 | 描述                                                         |
+| --------------------- | -------------------------------------- | ------------------------------------------------------------ |
+| getKind()             | <a href="#ElementKind">ElementKind</a> | 返回此元素的种类：包、类、接口、方法、字段等                 |
+| asType()              | <a href="#TypeMirror">TypeMirror</a>   | 返回元素的数据类型（基本类型、引用类型、数组类型等等）       |
+| getSimpleName()       | Name                                   | 返回此元素的简单名称,比如activity名                          |
+| getEnclosingElement() | Element                                | 返回此元素的修饰符                                           |
+| getModifiers          | Set<.Modifier>                         | 返回此元素的修饰符                                           |
+| getAnnotation         | <.A. extends Annotation> A             | 返回此元素针对指定类型的注解（如果存在这样的注解），否则返回 null。注解可以是继承的，也可以是直接存在于此元素上的 |
 
 ### ElementKind
 
