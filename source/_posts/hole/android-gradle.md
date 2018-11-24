@@ -89,3 +89,44 @@ buildTypes {
 </style>
 ```
 
+**error:execution failed for task ':app:transformnativelibswithstripdebugsymbolfordebug'.**
+
+删除`/sdk/ndk-bundle`
+
+### Vivo 手机使用 Android studio安装APK失败的解决办法
+
+在工程目录的`gradle.properties`中添加`android.injected.testOnly = false`即可
+
+### 解决Android Studio在XML中使用自定义View输入自定义属性的时候没有任何提示的问题
+
+```
+我们在自定义View和自定义属性的时候，要保持自定义View的className和自定义属性的的declare-styleable名一样，根据这个约定，IDE才会自动提示
+```
+
+### **Received status code 400 from server: Bad Request**
+
+出现此问题是因为给gradle配置了错误的代理。
+
+macOS路径：`/Users/userName/.gradle/gradle.properties`
+
+```
+## For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+#
+# Specifies the JVM arguments used for the daemon process.
+# The setting is particularly useful for tweaking memory settings.
+# Default value: -Xmx1024m -XX:MaxPermSize=256m
+# org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+#
+# When configured, Gradle will run in incubating parallel mode.
+# This option should only be used with decoupled projects. More details, visit
+# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+# org.gradle.parallel=true
+#Thu Sep 06 17:23:56 CST 2018
+systemProp.https.proxyPort=80
+systemProp.http.proxyHost=mirrors.neusoft.edu.cn
+systemProp.https.proxyHost=mirrors.neusoft.edu.cn
+systemProp.http.proxyPort=80
+```
+
+删除最后的四行
